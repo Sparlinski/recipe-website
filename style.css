@@ -7,10 +7,15 @@
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color:  rgb(48, 48, 48);
 }
 
 body {
-    background-color: rgb(233, 236, 242);
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -26,6 +31,18 @@ h1 {
     color: aliceblue;
 }
 
+h2 {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 1em 0 2em 0;
+}
+
 .header-links {
     list-style-type: none;
     display: inline;
@@ -37,27 +54,93 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
-    background-color: aqua;
+    height: 65vh;
 }
 
-#main-tabs {
+.main-nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 475px;
+    width: 450px;
     height: 300px;
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 25px;
-    background-color: bisque;
+    background-color: rgb(176, 183, 189);
 }
 
-#main-tabs-heading {
-    font-size: 1.75rem;
+.main-nav-links:hover {
+    background-color: rgb(141, 147, 152);
 }
 
-#knife-fork-icon,
-#all-recipes-icon,
-#shopping-list-icon {
-    height: 85%;
+.main-nav-heading {
+    font-size: 1.5em;
 }
+
+.main-nav-icons {
+    height: 80%;
+}
+
+.rotd-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    margin: 2em 0 8em 0;
+}
+
+.rotd-description {
+    position: absolute;
+    align-self: flex-start;
+    width: 400px;
+    height: 300px;
+    padding: 2em;
+    margin-left: 5%;
+    border-radius: 25px;
+    border: 2px solid rgb(48, 48, 48);
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.rotd-image {
+    position: absolute;
+    max-width: 100%;
+    min-width: 1100px;
+    margin-top: 10em;
+}
+
+.featured-recipes-link {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    margin: 2em 0 2em 0;
+}
+
+.featured-a-panel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.featured-image {
+    height: 100%;
+}
+
+.featured-b-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    padding: 6em;
+    gap: 1em;
+    background-color: rgb(176, 183, 189);
+}
+
+
+
