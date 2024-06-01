@@ -22,4 +22,8 @@ CSS
   font-style: normal;
 }
 
+FONT SIZES
+
+h2 - 3em
+
 SCREEN SIZES

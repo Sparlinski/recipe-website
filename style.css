@@ -11,6 +11,7 @@
 }
 
 body {
+    text-align: center;
     background-color: aliceblue;
 }
 
@@ -34,13 +35,36 @@ h1 {
 h2 {
     font-size: 3em;
     font-weight: 400;
+    border: 2px solid  rgb(48, 48, 48);
+    border-radius: 25px;
     text-align: center;
+    display: inline-block;
+    padding: .25em;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 1.5em;
-    margin: 1em 0 2em 0;
+    font-weight: 400;
+    font-size: 2em;
+    margin: .5em 0 .75em 0;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: .5em;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+}
+
+h5 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1.75rem;
+    font-weight: 400;
 }
 
 .header-links {
@@ -54,7 +78,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 65vh;
+    height: 60vh;
 }
 
 .main-nav-links {
@@ -80,7 +104,7 @@ h3 {
     height: 80%;
 }
 
-.rotd-link {
+.rotd-nav {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -88,7 +112,7 @@ h3 {
     align-items: center;
     overflow: hidden;
     width: 100%;
-    height: 600px;
+    height: 550px;
     margin: 2em 0 8em 0;
 }
 
@@ -102,6 +126,7 @@ h3 {
     border-radius: 25px;
     border: 2px solid rgb(48, 48, 48);
     z-index: 1;
+    text-align: left;
     background-color: aliceblue;
 }
 
@@ -112,11 +137,11 @@ h3 {
     margin-top: 10em;
 }
 
-.featured-recipes-link {
+.featured-recipes-nav {
     width: 100%;
     display: flex;
     height: 600px;
-    margin: 2em 0 2em 0;
+    margin: 2.5em 0 6em 0;
 }
 
 .featured-a-panel {
@@ -139,8 +164,40 @@ h3 {
     width: 50%;
     padding: 6em;
     gap: 1em;
+    text-align: left;
     background-color: rgb(176, 183, 189);
 }
 
+.subscribe-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(48, 48, 48);
+}
 
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: aliceblue;
+}
 
+.subscribe-btn {
+    width: 175px;
+    height: 50px;
+    font-size: larger;
+    background-color: rgb(176, 183, 189);
+    border-radius: 10px;
+}
+
+.subscribe-btn:hover {
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    cursor: pointer;
+} 
