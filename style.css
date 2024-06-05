@@ -1,8 +1,8 @@
 *,
 *::after,
 *::before {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -63,8 +63,36 @@ h5 {
 }
 
 h6 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 400;
+}
+
+h7 {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+h8 {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+h9 {
+    color: aliceblue;
+}
+
+h10 {
+    display: block;
+    font-size: 3rem;
+    margin: .5em 0 .5em 0;
+}
+
+h11 {
+    display: block;
+    font-size: 1.75rem;
+    background-color: rgb(208, 217, 225);
+    width: 100vw;
+    padding: .5em 0 .5em 0;
 }
 
 .header-links {
@@ -72,6 +100,10 @@ h6 {
     display: inline;
     margin-right: 4em;
     color: aliceblue;
+}
+
+main {
+    width: 100%;
 }
 
 #main-nav {
@@ -89,7 +121,8 @@ h6 {
     height: 300px;
     padding: 1.5em;
     border-radius: 25px;
-    background-color: rgb(176, 183, 189);
+    box-shadow: 8px 11px 14px -9px  rgb(48, 48, 48);
+    background-color: rgb(208, 217, 225);
 }
 
 .main-nav-links:hover {
@@ -165,7 +198,11 @@ h6 {
     padding: 6em;
     gap: 1em;
     text-align: left;
-    background-color: rgb(176, 183, 189);
+    background-color: rgb(208, 217, 225);
+}
+
+footer {
+    text-align: left;
 }
 
 .subscribe-nav {
@@ -181,7 +218,7 @@ h6 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 80%;
+    height: 60%;
     width: 40%;
     padding: 1em;
     border-radius: 25px;
@@ -190,9 +227,10 @@ h6 {
 
 .subscribe-btn {
     width: 175px;
-    height: 50px;
-    font-size: larger;
-    background-color: rgb(176, 183, 189);
+    height: 35px;
+    font-size: 1rem;
+    background-color:  rgb(197, 206, 213);
+    border: none;
     border-radius: 10px;
 }
 
@@ -201,3 +239,128 @@ h6 {
     color: aliceblue;
     cursor: pointer;
 } 
+
+.subscribe-nav-p {
+    font-size: .8rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em 0 2em;
+    width: 100%;
+    height: 125px;
+    background-color: rgb(221, 230, 238);
+}
+
+.footer-branding-top {
+    width: 100%;
+    height: 75px;
+}
+
+.footer-branding-bottom {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(197, 206, 213);
+}
+
+.footer-branding-top,
+.footer-branding-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+    padding-left: 2em;
+}
+
+.footer-panels {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    gap: .75em;
+}
+
+.footer-links  {
+    font-size: .75rem;
+}
+
+.footer-p {
+    font-size: .75rem;
+}
+
+.footer-subscribe-btn {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: .5em;
+    background-color: rgb(197, 206, 213);
+}
+
+.footer-subscribe-btn:hover {
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+    cursor: pointer;
+} 
+
+.panel-icons {
+    margin-right: .25em;
+}
+
+.insta,
+.facebook,
+.x-logo {
+    height: 30px;
+    margin-right: .5em;
+}
+
+#all-chicken-recipes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3em;
+    gap: 3em;
+}
+
+.all-chicken-links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 30%;
+    min-width: 375px;
+    height: 325px;
+}
+
+.all-chicken-imgs {
+    position: absolute;
+    width: 100%;
+    min-width: 150px;
+}
+
+.all-recipe-tags {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    height: 1.5em;
+    width: 5em;
+    font-size: 2rem;
+    z-index: 1;
+    border-radius: 0 5px 5px 0;
+    background-color: aliceblue;
+}
+
+.all-recipe-p {
+    font-size: 1rem;
+}
+
+/* PLACEHOLDER */ 
+.coming-soon {
+    width: 100%;
+}
