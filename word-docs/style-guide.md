@@ -1,6 +1,9 @@
 COLORS
 
-Dark grey - rgb(48, 48, 48);
+Dark Grey - rgb(48, 48, 48);
+Medium Grey - rgb(208, 217, 225)
+Light Grey - rgb(221, 230, 238)
+Lighter Grey - aliceblue rgb(240, 248, 255)
 
 FONTS
 
