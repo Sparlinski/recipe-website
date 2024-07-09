@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliciousweekly.com</title>
+    <link rel="stylesheet" href="style.css">
+
+<!--FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html" class="homepage"> 
+            <h1>Deliciousweekly.com</h1>
+        </a>
+        <ul>
+            <a href="about.html" class="header-nav">
+                <li class="header-links">ABOUT</li>
+            </a>
+            <a href="new-recipes.html" class="header-nav">
+                <li class="header-links">NEW RECIPES</li>
+            </a>
+            <a href="newsletter.html" class="header-nav">
+                <li class="header-links">NEWSLETTER</li>
+            </a>
+            <a href="blog.html" class="header-nav">
+                <li class="header-links">BLOG</li>
+            </a>
+        </ul>
+    </header>
+<main>
+    <section class="carousel">
+        <button class="carousel_button left_btn is_hidden">
+            <img class="carousel_arrows" src="assets/left-arrow.png" alt="left arrow">
+        </button>
+        
+        <div class="carousel_track_container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current_slide">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                        <div class="recipe_card_description">
+                            <h14>RECIPE</h14>
+                            <p class="recipe_card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, necessitatibus beatae adipisci at amet dolores molestiae ducimus praesentium.</p>
+                        </div>
+                        <img class="carousel_images" src="images/bacon-wrapped-meatballs.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                        <div class="recipe_card_description">
+                            <h14>RECIPE</h14>
+                            <p class="recipe_card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, necessitatibus beatae adipisci at amet dolores molestiae ducimus praesentium.</p>
+                        </div>
+                        <img class="carousel_images" src="images/lemon butter chicken.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                        <div class="recipe_card_description">
+                            <h14>RECIPE</h14>
+                            <p class="recipe_card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, necessitatibus beatae adipisci at amet dolores molestiae ducimus praesentium.</p>
+                        </div>
+                        <img class="carousel_images" src="images/mexican style beef with beans.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                        <div class="recipe_card_description">
+                            <h14>RECIPE</h14>
+                            <p class="recipe_card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, necessitatibus beatae adipisci at amet dolores molestiae ducimus praesentium.</p>
+                        </div>
+                        <img class="carousel_images" src="images/turkey olive smoked paprika meatballs.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+                        <div class="recipe_card_description">
+                            <h14>RECIPE</h14>
+                            <p class="recipe_card_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, necessitatibus beatae adipisci at amet dolores molestiae ducimus praesentium.</p>
+                        </div>
+                        <img class="carousel_images" src="images/tika-masala.jpg">
+                    </a>
+                </li>
+            </ul>     
+        </div>
+
+        <button class="carousel_button right_btn">
+            <img class="carousel_arrows" src="assets/right-arrow.png" alt="right arrow">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current_slide"></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-branding-top">
+        <h7>Delicious Weekly</h7>
+        <p class="footer-p">Bringing variety with ease to your weekly recipes</p>
+    </div>
+    <section class="footer-nav">
+        <div class="footer-panels panel-links">
+            <h8>EXPLORE</h8>
+            <a href="new-recipes.html" class="footer-links">NEW RECIPES</a>
+            <a href="newsletter.html" class="footer-links">NEWSLETTER</a>
+            <a href="blog" class="footer-links">BLOG</a>
+        </div>
+        <div class="footer-panels panel-links">
+            <h8>LEARN</h8>
+            <a href="about.html" class="footer-links">ABOUT</a>
+        </div>
+        <div class="footer-panels">
+            <h8>CONNECT</h8>
+            <nav class="panel-icons">
+                <a href="https://www.instagram.com" class="footer-links">
+                    <img class="social-links insta" src="assets/instagram-logo.png" alt="instagram-logo">
+                </a>
+                <a href="https://www.facebook.com" class="footer-links">
+                    <img class="social-links facebook" src="assets/facebook-logo.png" alt="facebook-logo">
+                </a>
+                <a href="https://x.com/?lang=en" class="footer-links">
+                    <img class="social-links x-logo" src="assets/x-logo.png" alt="x logo">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-panels panel-sub">
+            <h8>SIGN UP FOR THE NEWSLETTER</h8>
+            <button class="footer-subscribe-btn">SUBSCRIBE</button>
+        </div>  
+    </section>
+    <div class="footer-branding-bottom">
+        <h9>Deliciousweekly.com</h9>
+    </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
