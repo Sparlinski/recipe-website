@@ -1,7 +1,7 @@
 COLORS
 
 Darkest Grey - rgb(48, 48, 48)
-Darker Grey - rgb(197, 206, 219)
+Darker Grey - rgb(197, 206, 213)
 Medium Grey - rgb(208, 217, 225)
 Light Grey - rgb(221, 230, 238)
 Lighter Grey - aliceblue rgb(240, 248, 255)
