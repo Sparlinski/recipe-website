@@ -176,7 +176,7 @@ main {
 
 .featured_image {
     width: 100%;
-    min-width: 600px;
+    min-width: 700px;
     padding-top: 2em;
 }
 
@@ -350,7 +350,8 @@ footer {
 
 .footer_subscribe_btn {
     height: 2.5em;
-    min-width: 225px;
+    width: 100%;
+    min-width: 200px;
     border: none;
     border-radius: 5px;
     background-color: rgb(197, 206, 213);
@@ -374,7 +375,7 @@ footer {
 }
 
 h5 {
-    font-size: .9rem;
+    font-size: .8rem;
     font-weight: 600;
 }
 
@@ -395,16 +396,16 @@ h6 {
 
 
 
-.all-recipes-grid {
+.all_recipes_grid {
     display: grid;
     justify-content: center;
     gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(375px,75fr));
     width: 100%;
-    padding: 4em 4em;
+    padding: 2em 4em;
 }
 
-.all-recipes-container {
+.all_recipes_container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -416,12 +417,12 @@ h6 {
     height: 300px;
 }
 
-.chicken-recipes-image {
+.chicken_recipes_image {
     position: absolute;
     width: 110%;
 }
 
-.all-recipes-tags {
+.all_recipes_tags {
     display: flex;
     align-items: center;
     position: absolute;
@@ -434,6 +435,23 @@ h6 {
     border-radius: 0 10px 10px 0;
 }
 
+h2.all_recipes_h {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5em;
+    margin: 1em auto;
+    background-color: rgb(221, 230, 238);
+    border: 2px solid rgb(208, 217, 225);
+    border-radius: 0;
+    border-style: solid none;
+}
+
+h3.all_recipe_cat {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
 
 
 
@@ -446,12 +464,12 @@ h6 {
 
 
 
-.plan-grids,
-.plan-grids-alt {
+.plan_grids,
+.plan_grids_alt {
     display: grid;
     justify-content: center;
     gap: .5em;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 80%;
     margin: auto;
     padding: .5em;
@@ -460,11 +478,11 @@ h6 {
     border: 3px solid rgb(208, 217, 225);
 }
 
-.plan-grids-alt {
+.plan_grids_alt {
     direction: rtl;
 }
 
-.plan-containers {
+.plan_containers {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,7 +494,7 @@ h6 {
     border: 2px solid rgb(208, 217, 225);
 }
 
-.title-card {
+.title_card {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
@@ -484,42 +502,79 @@ h6 {
     gap: .25em;
 }
 
-.plan-icons {
+.plan_icons {
     height: 60%;
 }
 
 
-.plan-imgs {
+.plan_imgs {
     position: relative;
     object-fit: cover;
     width: 100%;
 }
 
-.quotes {
+.quote {
 display: block;
-font-size: 1rem;
-padding: .5em;
-margin: 2em 0 2em 0;
+font-size: clamp(1rem, 1.25vw, 1.25rem);
+padding: .5em 3em;
+margin: 2em auto;
+text-align: center;
 background-color: rgb(221, 230, 238);
 border: 2px solid rgb(208, 217, 225);
 border-style: solid none;
 }
 
-.grid-end {
+.grid_end {
     margin-bottom: 2em;
 }
 
-h2.meal-plans-h {
+h2.meal_plans_h,
+.shopping_lists_h {
     display: block;
+    text-align: center;
     font-size: 2rem;
     padding: .5em;
-    margin: 1em 0 1em 0;
+    margin: 1em auto;
     background-color: rgb(221, 230, 238);
     border: 2px solid rgb(208, 217, 225);
     border-radius: 0;
     border-style: solid none;
 }
 
+h2.plan_week {
+    font-size: 3rem;
+}
+
+@media (max-width: 1150px) {
+    .plan_grids,
+    .plan_grids_alt {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto auto;
+        gap: .5em;
+        width: 90%;
+        margin: 0 auto;
+      }
+    
+      .plan_containers {
+        background-color: aliceblue;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    
+      .title_card {
+        grid-column: 1 / -1;
+      }
+    
+      .plan_imgs {
+        height: 100%;
+      }
+    
+      .plan_week {
+        margin: 0;
+      }
+
+}
 
 
 
@@ -536,7 +591,7 @@ h2.meal-plans-h {
     position: relative;
     height: 70vh;
     width: 70%;
-    min-width: 580px;
+    min-width: 450px;
     min-height: 510px;
     margin: 4em auto; 
 }
@@ -585,11 +640,11 @@ h2.meal-plans-h {
 }
 
 .right_btn {
-    right: -8em;
+    right: -10%;
 }
 
 .left_btn {
-    left: -8em;
+    left: -10%;
 }
 
 .carousel_nav {
@@ -631,14 +686,38 @@ h2.meal-plans-h {
     background-color: aliceblue;
     border: 2px solid rgb(48, 48, 48);
     border-radius: 25px;
-    padding: 2em .5em;
+    padding: 1em;
 }
 
 .recipe_card_p {
     text-align: left;
-    margin-top: 2em;
+    margin-top: 1em;
+    font-size: clamp(.8rem, 1vw, 1rem);
 }
 
+h3.recipe_card_h {
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+@media (max-width: 725px) {
+    .carousel_arrows {
+        height: 40px;
+    }
+
+    .carousel_button {
+        top: 108%;
+    }
+
+    .right_btn {
+        right: 2em;
+    }
+    
+    .left_btn {
+        left: 2em;
+    }
+}
+    
 
 
 
@@ -654,13 +733,15 @@ h2.meal-plans-h {
 .shoplist_container {
     display: flex;
     width: 90%;
-    min-width: 700px;
-    min-height: 350px;
+    min-width: 850px;
+    min-height: 450px;
     aspect-ratio: 16 / 9;
-    height: 80vh;
+    height: 70vh;
     margin: auto;
     gap: 1em;
+    margin-bottom: 2em;
 }
+
 
 .shoplist_section {
     display: flex;
@@ -669,6 +750,11 @@ h2.meal-plans-h {
     background-color: rgb(221, 230, 238);
     border-radius: 25px;
     padding: 1em;
+}
+
+.shoplist_cat_container {
+    display: flex;
+    align-items: center;
 }
 
 .shoplist_section.middle {
@@ -685,27 +771,60 @@ h2.meal-plans-h {
     padding: 1em;
 }
 
+.cat_icon_container {
+    height: 2.5em;
+    min-height: 1.5em;
+    width: auto;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.cat_icon {
+    height: 100%;
+}
+
 .underline {
     border-bottom: 1px solid rgb(48, 48, 48);
-    margin-bottom: 1em;
+    margin: .5em 0 .5em 0;
 }
 
 .shop_list_items {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: clamp(.75rem, 1vw, 1em);
 }
+
 
 .shop_list_items li {
     display: flex;
     justify-content: space-between;
     padding: .5em 0;
+    font-size: clamp(.75rem, 1vw, 1rem);
 }
 
 .shop_list_items li .quantity {
     width: 5em;
     text-decoration: underline;
-    text-underline-offset: .35em;
+    text-underline-offset: .35rem;
+    color: brown;
+}
+
+h2.shoplist_h {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5em;
+    margin: 1em auto;
+    background-color: rgb(221, 230, 238);
+    border: 2px solid rgb(208, 217, 225);
+    border-radius: 0;
+    border-style: solid none;
+}
+
+h3.shoplist_cat_h {
+    font-size: clamp(.70rem, 1vw, 1rem);
+    font-weight: 400;
 }
 
 
@@ -733,7 +852,7 @@ h2.meal-plans-h {
 
 .recipe_description,
 .recipe_container {
-    min-width: 500px;
+    min-width: 450px;
 }
 
 .recipe_ingredients {
