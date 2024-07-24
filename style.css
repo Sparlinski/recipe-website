@@ -95,7 +95,6 @@ main {
     gap: 2em;
     border: 2px solid rgb(141, 147, 152);
     border-radius: 25px;
-/*     box-shadow: 8px 11px 14px -9px  rgb(48, 48, 48); */
     background-color: rgb(208, 217, 225);
 }
 
@@ -511,6 +510,7 @@ h3.all_recipe_cat {
     position: relative;
     object-fit: cover;
     width: 100%;
+    padding-top: .25em;
 }
 
 .quote {
@@ -568,6 +568,7 @@ h2.plan_week {
     
       .plan_imgs {
         height: 100%;
+        padding-top: 0;
       }
     
       .plan_week {
@@ -682,7 +683,7 @@ h2.plan_week {
     left: 2%;
     width: 30%;
     min-width: 225px;
-    height: 40%;
+    height: 45%;
     background-color: aliceblue;
     border: 2px solid rgb(48, 48, 48);
     border-radius: 25px;
@@ -920,6 +921,53 @@ h2.recipe_title {
     margin: 1% 5%;
     font-size: clamp(1.75rem, 2.5vw, 4rem);
 }
+
+
+
+
+
+/* ABOUT */
+
+
+
+
+h2.about_h {
+display: block;
+text-align: center;
+font-size: 2rem;
+padding: .5em;
+margin: 1em auto;
+background-color: rgb(221, 230, 238);
+border: 2px solid rgb(208, 217, 225);
+border-radius: 0;
+border-style: solid none;
+}
+
+
+
+
+/* PLACEHOLDER IMAGE */
+
+.about_section {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.placeholder {
+    width: 60%;
+    min-width: 450px;
+    height: auto;
+    padding: 0 2em;
+    background-color: rgb(221, 230, 238);
+}
+
+.curtain {
+    width: 20%;
+    background-color: rgb(208, 217, 225);;
+}
+
+
 
 
 
