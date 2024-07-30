@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliciousweekly.com</title>
+    <link rel="stylesheet" href="style.css">
+
+<!--FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+
+        <a href="homepage.html" class="homepage"> 
+            <h1>Deliciousweekly.com</h1>
+        </a>
+        <ul class="header_links">
+            <a href="about.html" class="header-nav">
+                <li class="header_link_items">ABOUT</li>
+            </a>
+            <a href="new-recipes.html" class="header-nav">
+                <li class="header_link_items">NEW RECIPES</li>
+            </a>
+            <a href="meal-plans.html" class="header-nav">
+                <li class="header_link_items">MEAL PLANS</li>
+            </a>
+            <a href="shopping-lists.html" class="header-nav">
+                <li class="header_link_items">SHOPPING LISTS</li>
+            </a>
+        </ul>
+
+    </header>
+
+<main>
+    <section class="carousel">
+        <button class="carousel_button left_btn is_hidden">
+            <img class="carousel_arrows" src="assets/left-arrow.png" alt="left arrow">
+        </button>
+        
+        <div class="carousel_track_container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current_slide">
+                    <a href="bolognese.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">BOLOGNESE</h3>
+                            <p class="recipe_card_p">A simple and classic dish. All of the flavor with simple and clean ingridients. Enjoy with a choice of pasta and garlic gread or a side salad.</p>
+                        </div>
+                        <img class="carousel_images" src="images/bolognese-v2.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="primavera.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">CHICKEN PRIMAVERA</h3>
+                            <p class="recipe_card_p">A clean and elegant take on a classic Italian recipe, made with simple and wholesome ingredients. A sprinkle of your favorite cheese over the top adds the finishing touch to this simple and healthy dish.</p>
+                        </div>
+                        <img class="carousel_images" src="images/primavera.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="enchiladas.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">ENCHILADAS</h3>
+                            <p class="recipe_card_p">These enchiladas bring all the flavor and leave the extras at the door. Making the spices and sauces from scratch ensures a cleaner final dish with none of the flavor sacrificed. Pair with roasted brussel sprouts and rice to bring a rounded healthy take on this Mexican classic.</p>
+                        </div>
+                        <img class="carousel_images" src="images/enchiladas-v2.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="wings.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">CRISPY BAKED WINGS WITH WEDGES</h3>
+                            <p class="recipe_card_p">These crispy, lightly seasoned baked wings are delicious by themselves of tossed or dipped in the delicious and tangy sugar free BBQ sauce. Paired alongside delicious seasoned potato wedges and a vegetabel medley.</p>
+                        </div>
+                        <img class="carousel_images" src="images/SL_030420_28660_08.jpg">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="paprika-chicken.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">PAPRIKA BAKED CHICKEN</h3>
+                            <p class="recipe_card_p">A healthy and delicous dinner that is quick and easy to make. Paired with delicious creamy mashed potatos, peas and corn, sometimes the simplest things are the tastiest.</p>
+                        </div>
+                        <img class="carousel_images" src="images/SL_030420_28660_08.jpg">
+                    </a>
+                </li>
+            </ul>     
+        </div>
+
+        <button class="carousel_button right_btn">
+            <img class="carousel_arrows" src="assets/right-arrow.png" alt="right arrow">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current_slide"></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+    <div class="footer_branding_top">
+        <h4>Delicious Weekly</h4>
+        <p class="footer_p">Bringing variety with ease to your weekly recipes</p>
+    </div>
+    <section class="footer_nav">
+        <div class="footer_nav_container">
+            <div class="footer_panels panel_links">
+                <h5>EXPLORE</h5>
+                <a href="new-recipes.html" class="footer_links">NEW RECIPES</a>
+                <a href="newsletter.html" class="footer_links">NEWSLETTER</a>
+                <a href="blog" class="footer_links">BLOG</a>
+            </div>
+            <div class="footer_panels panel_links">
+                <h5>LEARN</h5>
+                <a href="about.html" class="footer_links">ABOUT</a>
+            </div>
+            <div class="footer_panels">
+                <h5>CONNECT</h5>
+                <nav class="panel_icons">
+                    <a href="https://www.instagram.com" class="footer_links">
+                        <img class="social-links insta" src="assets/instagram-logo.png" alt="instagram-logo">
+                    </a>
+                    <a href="https://www.facebook.com" class="footer_links">
+                        <img class="social-links facebook" src="assets/facebook-logo.png" alt="facebook-logo">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="footer_links">
+                        <img class="social_links x_logo" src="assets/x-logo.png" alt="x logo">
+                    </a>
+                </nav>
+            </div>
+            <div class="footer_panels panel_sub">
+                <h5>SIGN UP FOR THE NEWSLETTER</h5>
+                <button class="footer_subscribe_btn">SUBSCRIBE</button>
+            </div>  
+        </div>
+    </section>
+    <div class="footer_branding_bottom">
+        <a href="homepage.html">
+            <h6>Deliciousweekly.com</h6>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>

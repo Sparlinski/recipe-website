@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliciousweekly.com</title>
+    <link rel="stylesheet" href="style.css">
+
+<!--FONTS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+
+        <a href="homepage.html" class="homepage"> 
+            <h1>Deliciousweekly.com</h1>
+        </a>
+        <ul class="header_links">
+            <a href="about.html" class="header-nav">
+                <li class="header_link_items">ABOUT</li>
+            </a>
+            <a href="new-recipes.html" class="header-nav">
+                <li class="header_link_items">NEW RECIPES</li>
+            </a>
+            <a href="meal-plans.html" class="header-nav">
+                <li class="header_link_items">MEAL PLANS</li>
+            </a>
+            <a href="shopping-lists.html" class="header-nav">
+                <li class="header_link_items">SHOPPING LISTS</li>
+            </a>
+        </ul>
+
+    </header>
+
+<main>
+    <section class="carousel">
+        <button class="carousel_button left_btn is_hidden">
+            <img class="carousel_arrows" src="assets/left-arrow.png" alt="left arrow">
+        </button>
+        
+        <div class="carousel_track_container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current_slide">
+                    <a href="jumbalaya.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">JUMBALAYA</h3>
+                            <p class="recipe_card_p">This New Orleans-inspired dish is packed full of flavor. The key to this dish is being familiar with the chorizo you use. Chorizo can be salty so it is wise to be cautious in the amount of salt you add. How well your chorizo holds together will also contribute to this dish's profile. I like a chorizo that holds together and adds extra substance to the dish.</p>
+                        </div>
+                        <img class="carousel_images" src="images/jumbalaya-v2.jpg" alt="jumbalaya">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="pot-roast.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">POT ROAST</h3>
+                            <p class="recipe_card_p">A classic American dish combined with an Irish stew twist. This dish is made for a slow cooker dump-and-go approach, but it can also be done stew style if you don't have a chance during your day to start the dish. A full-flavoured filling meal with minimal fuss or effort.</p>
+                        </div>
+                        <img class="carousel_images" src="images/pot roast.jpg" alt="pot roast">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="chicken-curry.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">CHICKEN CURRY</h3>
+                            <p class="recipe_card_p">This recipe has evolved through trial and error to deliver a delicious curry, removing the added sugar that some can bring without sacrificing any flavor. As with all curries, the type of powder you use is king, so don't be afraid to experiment to augment the flavor.</p>
+                        </div>
+                        <img class="carousel_images" src="images/chicken curry-v2.jpg" alt="chicken curry">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="feta-meatballs.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">TURKEY FETA MEATBALLS</h3>
+                            <p class="recipe_card_p">The feta used in these meatballs is a perfect compliment to bring out the flavors and seasonings of these delicious turkey meatballs. It pairs well with a delicious red sauce and pasta and a side salad to round the meal out perfectly.</p>
+                        </div>
+                        <img class="carousel_images" src="images/feta turkey meatballs.jpg" alt="turkey feta meatballs">
+                    </a>
+                </li>
+                <li class="carousel_slide">
+                    <a href="chili.html">
+                        <div class="recipe_card_description">
+                            <h3 class="recipe_card_h">CHILI</h3>
+                            <p class="recipe_card_p">It's a classic chili recipe. Chilis come in all different styles, flavors, and heat levels, and this one is no different. No frills, just a classic, clean, sugar-free delicious chili that packs the right amount of heat.</p>
+                        </div>
+                        <img class="carousel_images" src="images/chili-v2.jpg" alt="chili">
+                    </a>
+                </li>
+            </ul>     
+        </div>
+
+        <button class="carousel_button right_btn">
+            <img class="carousel_arrows" src="assets/right-arrow.png" alt="right arrow">
+        </button>
+
+        <div class="carousel_nav">
+            <button class="carousel_indicator current_slide"></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+            <button class="carousel_indicator "></button>
+        </div>
+    </section>
+</main>
+
+<footer>
+
+    <div class="footer_branding_top">
+        <h4>Delicious Weekly</h4>
+        <p class="footer_p">Bringing variety with ease to your weekly recipes</p>
+    </div>
+    <section class="footer_nav">
+        <div class="footer_nav_container">
+            <div class="footer_panels panel_links">
+                <h5>EXPLORE</h5>
+                <a href="new-recipes.html" class="footer_links">NEW RECIPES</a>
+                <a href="newsletter.html" class="footer_links">NEWSLETTER</a>
+                <a href="blog" class="footer_links">BLOG</a>
+            </div>
+            <div class="footer_panels panel_links">
+                <h5>LEARN</h5>
+                <a href="about.html" class="footer_links">ABOUT</a>
+            </div>
+            <div class="footer_panels">
+                <h5>CONNECT</h5>
+                <nav class="panel_icons">
+                    <a href="https://www.instagram.com" class="footer_links">
+                        <img class="social-links insta" src="assets/instagram-logo.png" alt="instagram-logo">
+                    </a>
+                    <a href="https://www.facebook.com" class="footer_links">
+                        <img class="social-links facebook" src="assets/facebook-logo.png" alt="facebook-logo">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="footer_links">
+                        <img class="social_links x_logo" src="assets/x-logo.png" alt="x logo">
+                    </a>
+                </nav>
+            </div>
+            <div class="footer_panels panel_sub">
+                <h5>SIGN UP FOR THE NEWSLETTER</h5>
+                <button class="footer_subscribe_btn">SUBSCRIBE</button>
+            </div>  
+        </div>
+    </section>
+    <div class="footer_branding_bottom">
+        <a href="homepage.html">
+            <h6>Deliciousweekly.com</h6>
+        </a>
+    </div>
+
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
