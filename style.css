@@ -692,7 +692,7 @@ h2.plan_week {
 .recipe_card_p {
     text-align: left;
     margin-top: 1em;
-    font-size: clamp(.75rem, .9vw, 1rem);
+    font-size: clamp(.75rem, .85vw, 1rem);
 }
 
 h3.recipe_card_h {
@@ -915,7 +915,7 @@ ol {
 .recipe_intro,
 ol,
 h3.recipe_sub-header {
-    font-size: clamp(.8rem, 1vw, 2rem);
+    font-size: clamp(.8rem, .9vw, 2rem);
 }
 
 h2.recipe_title {
