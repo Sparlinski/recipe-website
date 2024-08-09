@@ -89,3 +89,44 @@ dotNav.addEventListener('click', e => {
     updateDots(currentDot, targetDot);
     hideArrows(slides, prevBtn, nextBtn, targetIndex);
 });
+
+/* SWIPE FUNCTION */
+
+let startSwipe; 
+let endSwipe;
+
+track.addEventListener('touchstart', (e) => {
+    startSwipe = e.touches[0].clientX;
+});
+
+track.addEventListener('touchend', (e) => {
+    endSwipe = e.changedTouches[0].clientX;
+
+    const swipeDistance = endSwipe - startSwipe;
+
+    if (swipeDistance > 50) {
+        const currentSlide = track.querySelector('.current_slide');
+        const prevSlide = currentSlide.previousElementSibling;
+        const currentDot = dotNav.querySelector('.current_slide');
+        const prevDot = currentDot.previousElementSibling;
+        const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+        if (prevSlide) {
+            moveSlide(track, currentSlide, prevSlide);
+            updateDots(currentDot, prevDot);
+            hideArrows(slides, prevBtn, nextBtn, prevIndex);
+        }
+    } else if (swipeDistance < -50) {
+        const currentSlide = track.querySelector('.current_slide');
+        const nextSlide = currentSlide.nextElementSibling;
+        const currentDot = dotNav.querySelector('.current_slide');
+        const nextDot = currentDot.nextElementSibling;
+        const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+        if (nextSlide) {
+            moveSlide(track, currentSlide, nextSlide);
+            updateDots(currentDot, nextDot);
+            hideArrows(slides, prevBtn, nextBtn, nextIndex);
+        }
+    }
+});

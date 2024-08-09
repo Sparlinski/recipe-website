@@ -1,6 +1,6 @@
 const featuredRecipes = [
     {
-        url: 'images/bacon-wrapped-meatballs-v2.jpg',
+        url: 'images/bacon-wrapped-meatballs.jpg',
         link: 'homepage.html',
         adjective: 'Baconlicious',
         name: 'Bacon Wrapped Meatballs',

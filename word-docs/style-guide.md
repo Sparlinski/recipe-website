@@ -1,7 +1,8 @@
 COLORS
 
 Darkest Grey - rgb(48, 48, 48)
-Darker Grey - rgb(197, 206, 213)
+Darker Grey - rgb(141, 147, 152)
+Dark Medium Grey - rgb(197, 206, 213)
 Medium Grey - rgb(208, 217, 225)
 Light Grey - rgb(221, 230, 238)
 Lighter Grey - aliceblue rgb(240, 248, 255)
@@ -28,6 +29,31 @@ CSS
 
 FONT SIZES
 
-h2 - 3em
 
 SCREEN SIZES
+
+/* Extra small devices (phones, 320px and up) */
+@media (min-width: 320px) {
+    /* styles */
+}
+
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+    /* styles */
+}
+
+/* Medium devices (laptops, 768px and up) */
+@media (min-width: 768px) {
+    /* styles */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* styles */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* styles */
+}
+

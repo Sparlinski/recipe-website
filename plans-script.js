@@ -1,3 +1,5 @@
+/* QUOTE FUNCTION SCRIPT */
+
 const quotes = [
     "Laughter is brightest in the place where the food is. - Irish Proverb",
     "One cannot think well, love well, sleep well, if one has not dined well. - Virginia Woolf",
@@ -48,5 +50,30 @@ quoteElements.forEach((element, index) => {
     }
 });
 
-console.log('This is firing');
-console.log(getRandomQuote());
+/* SHUFFLE PLAN IMAGE FUNCTION */
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    function shuffleGridImages(grid) {
+        const images = grid.querySelectorAll('.plan_imgs');
+        const imageSources = Array.from(images).map(img => img.src);
+
+        for (let i = imageSources.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [imageSources[i], imageSources[j]] = [imageSources[j], imageSources[i]];
+        }
+
+        images.forEach((img, index) => {
+            img.src = imageSources[index];
+        });
+    }
+
+    const grids = document.querySelectorAll('.plan_grids, .plan_grids_alt');
+
+    grids.forEach(grid => {
+        shuffleGridImages(grid);
+    });
+});
+
+
+
+
