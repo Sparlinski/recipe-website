@@ -12,6 +12,7 @@
 
 body {
     background-color: aliceblue;
+    min-width: 300px;
 }
 
 a {
@@ -60,6 +61,38 @@ h1 {
     color: aliceblue;
     font-size: 1.8em;
     margin: .25em .25em;
+}
+
+@media (min-width: 770px) {
+    
+    header {
+        flex-direction: row;
+        padding: 1em 0 1em 2em;  
+        background-color: rgb(48, 48, 48);
+        width: 100%;
+    }
+    
+    .header_links {
+        width: 60%;
+        padding: .5em;
+        margin: 0 0 0 2em;
+        justify-content: space-around;
+    }
+    
+    .header_link_items {
+        list-style-type: none;
+        display: inline;
+        color: aliceblue;
+        font-size: clamp(.8rem, 1vw, 1rem);
+    }
+    
+    h1 {
+        font-size: clamp(1.8rem, 2vw, 2rem);
+    }
+
+    .separator {
+        display: none;
+    }
 }
 
 
@@ -127,6 +160,43 @@ h2 {
     font-weight: 400;
 }
 
+@media (min-width: 600px) {
+
+    #main_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 2em;
+    }
+    
+    .main_nav_links {
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+        height: 50vh;
+        padding: .5em;
+        gap: 2rem;
+    }
+    
+    .main_nav_heading {
+        font-size: clamp(1.05rem, 2vw, 2rem);
+    }
+    
+    .main_nav_icons {
+        height: 40%;
+    }
+    
+    .h2_container {
+        width: 90%;
+        max-width: 650px;
+    }
+    
+    h2 {
+        font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+    }       
+}
+
 /* ROTD */
 
 .rotd {
@@ -144,7 +214,8 @@ h2 {
 
 .rotd_image {
     padding-top: 4em;
-    width: 175%;
+    width: 110%;
+    min-width: 550px;
     object-fit: cover;
 }
 
@@ -155,13 +226,58 @@ h2 {
 }
 
 h3.rotd_recipe_h {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
 } 
 
 .rotd_description_p {
     font-size: 1rem;
     margin-top: 1em;
+}
+
+@media (min-width: 600px) {
+    .rotd_nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 6em;
+        aspect-ratio: 1000 / 350;
+    }
+    
+    .rotd_description {
+        position: absolute;
+        align-self: flex-start;
+        width: 30%;
+        min-width: 250px;
+        bottom: 10%;
+        left: 2.5%;
+        border-radius: 25px;
+        border: 2px solid rgb(48, 48, 48);
+        z-index: 1;
+        text-align: left;
+        background-color: aliceblue;
+    }
+    
+    .rotd_image {
+        position: absolute;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    h3.rotd_recipe_h {
+        font-size: clamp(1.15rem, 2vw, 2rem);
+        font-weight: 400;
+    } 
+    
+    .rotd_description_p {
+        margin-top: 5%;
+        font-size: clamp(.75rem, 1vw, 1rem);
+    }
 }
 
 /* FEATURED */
@@ -182,6 +298,8 @@ h3.rotd_recipe_h {
 }
 
 .featured_image {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
 }
 
@@ -212,6 +330,33 @@ h3.rotd_recipe_h {
 .featured_recipe_h {
     font-weight: 400;
     font-size: 1.3rem;
+}
+
+@media (min-width: 600px) {
+    .featured_recipes_nav {
+        height: 60vh;
+        margin-bottom: 4em;
+    }
+    
+    
+    .featured_b_panel {
+        padding: 2em;
+        gap: 1em;
+    }
+    
+    .featured_description_p {
+        display: flex;
+        font-size: clamp(.8rem, 1vw, 1rem);
+        max-width: 500px;
+    }
+    
+    .featured_adj {
+        padding: .5em;
+    }
+    
+    .featured_recipe_h {
+        font-size: clamp(1.3rem, 2vw, 2rem);
+    }
 }
 
 /* SUBSCRIBE */
@@ -261,8 +406,23 @@ h3.rotd_recipe_h {
 }
 
 .subscribe_h {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 600;
+}
+
+@media (min-width: 600px) {
+    .subscribe_container {
+        max-width: 500px;
+        height: 18vh;
+    }
+
+    .subscribe_h {
+        font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+    }
+
+    .subscribe_nav_p {
+        font-size: clamp(.7rem, .9rem, .9vw);
+    }
 }
 
 
@@ -307,7 +467,10 @@ footer {
 .footer_nav_items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    column-gap: 1em;
+    max-width: 1100px;
 }
 
 .footer_branding_bottom {
@@ -325,15 +488,15 @@ footer {
     font-size: .75rem;
 }
 
-.panel_icons {
-    margin-right: .25em;
-}
-
 .insta,
 .facebook,
 .x_logo {
     height: 2em;
     margin-right: .5em;
+}
+
+.x_logo {
+    margin: 0;
 }
 
 .footer_subscribe_btn {
