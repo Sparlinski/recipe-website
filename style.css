@@ -130,7 +130,7 @@ h1 {
     padding: .5em;
     border: 2px solid rgb(141, 147, 152);
     border-radius: 20px;
-    background-color: rgb(208, 217, 225);
+    background-color: rgb(221, 230, 238);
 }
 
 .main_nav_links:hover {
@@ -167,14 +167,14 @@ h2 {
         flex-direction: row;
         justify-content: space-between;
         width: 90%;
-        margin-bottom: 2em;
+        margin-bottom: 6em;
     }
     
     .main_nav_links {
         display: flex;
         flex-direction: column;
         padding: .5em;
-        height: 50vh;
+        height: 40vh;
         padding: .5em;
         gap: 2rem;
     }
@@ -196,7 +196,7 @@ h2 {
     }
     
     h2 {
-        font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+        font-size: clamp(1.75rem, 3vw, 3rem);
     }       
 }
 
@@ -349,16 +349,17 @@ h3.rotd_recipe_h {
     
     .featured_description_p {
         display: flex;
-        font-size: clamp(.8rem, 1vw, 1rem);
+        font-size: clamp(.8rem, 1.25vw, 1.25rem);
         max-width: 500px;
     }
     
     .featured_adj {
         padding: .5em;
+        font-size: clamp(1rem, 1.5vw, 1.5vw);
     }
     
     .featured_recipe_h {
-        font-size: clamp(1.3rem, 2vw, 2rem);
+        font-size: clamp(1.3rem, 2.25vw, 2.25rem);
     }
 }
 
@@ -415,6 +416,8 @@ h3.rotd_recipe_h {
 
 @media (min-width: 600px) {
     .subscribe_container {
+        display: flex;
+        justify-content: space-around;
         max-width: 500px;
         height: 18vh;
     }
@@ -424,7 +427,7 @@ h3.rotd_recipe_h {
     }
 
     .subscribe_nav_p {
-        font-size: clamp(.7rem, .9rem, .9vw);
+        font-size: clamp(.7rem, 1rem, 1vw);
     }
 }
 
@@ -555,11 +558,15 @@ h2.meal_plans_h,
 }
 
 h2.plan_week {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .plan_icons {
     height: 60%;
+}
+
+.plan_grids_alt {
+    direction: rtl;
 }
 
 .plan_grids,
@@ -583,7 +590,6 @@ h2.plan_week {
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    grid-column: 1 / -1;
     padding: .5em;
 }
 
@@ -609,14 +615,6 @@ h2.plan_week {
     width: 115%;
 }
 
-.last_grid_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / -1;
-    padding-top: 4em;   
-}
-
 .plan_imgs.last_plan_image {
     width: 110%;
     height: auto;
@@ -624,7 +622,7 @@ h2.plan_week {
 
 .quote {
 display: block;
-font-size: 1rem;
+font-size: .9rem;
 padding: .5em 1em;
 margin: 2em auto;
 text-align: center;
@@ -648,6 +646,33 @@ h2.meal_plans_h,
     border: 2px solid rgb(208, 217, 225);
     border-radius: 0;
     border-style: solid none;
+}
+
+
+@media (min-width: 990px) {
+    .plan_grids,
+    .plan_grids_alt {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+  }
+  
+  .plan_containers.title_card,
+  .plan_containers {
+    height: 30vh;
+    }
+
+    .quote {
+        display: block;
+        font-size: clamp(.9rem, 1.25vw, 1.25rem);
+        }
+
+        h2.plan_week {
+            font-size: clamp(1.25rem, 3rem, 3vw);
+        }
+
+        .plan_icons {
+            max-height: 150px;
+        }
 }
 
 
@@ -695,9 +720,8 @@ h2.meal_plans_h,
     align-self: flex-start;
     top: 50%;
     background-color: aliceblue;
-    width: 40%;
-    height: 4em;
-    padding: 1em 1em 1em .5em;
+    min-width: 30%;
+    padding: 1em 1em 1em 0;
     border-radius: 0 10px 10px 0;
     font-size: .75rem;
 }
@@ -727,7 +751,55 @@ h3.all_recipe_cat {
 }
 
 
+@media (min-width: 600px) {
 
+    .all_recipes_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        justify-self: center;
+        margin: auto;
+        gap: 1em;
+        margin-bottom: 6em;
+    }
+    
+    .all_recipes_container {
+        width: 100%;
+        height: 22vh;
+    }
+    
+    
+    .all_recipe_cat.top_cat {
+        margin-top: 2em;
+    }
+
+    .all_recipes_tags {
+        font-size: clamp(.75rem, 1vw, 1rem);
+    }
+    
+    h3.all_recipe_cat {
+        font-size: clamp(1rem, 1.75vw, 1.75rem);
+    }
+
+    .all_recipes_grid.last_grid {
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 990px) {
+    .all_recipes_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .all_recipes_container {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .all_recipes_grid.last_grid {
+        margin-bottom: 2em;
+    }
+}
 
 
 
@@ -783,7 +855,6 @@ h3.all_recipe_cat {
     bottom: 2%;
     left: 2%;
     min-height: 2em;
-    max-width: 60%;
     background-color: aliceblue;
     border: 2px solid rgb(48, 48, 48);
     border-radius: 20px;
@@ -843,6 +914,65 @@ h3.recipe_card_h {
 
 .is_hidden {
     display: none;
+}
+
+@media (min-width: 770px) {
+    .carousel {
+        height: 65vh;
+        width: 80%; 
+    }
+    
+    .recipe_card_description {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1em;
+        z-index: 1;
+        bottom: 1em;
+        left: 1em;
+        max-width: 60%;
+    }
+    
+    .recipe_card_p {
+        display: flex;
+        font-size: clamp(1rem, 1.15vw, 1.15em);
+    }
+    
+    h3.recipe_card_h {
+        font-size: clamp(1rem, 2vw, 2rem);
+    }
+    
+    .carousel_button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    .carousel_arrows {
+        display: flex;
+        height: 80px;
+    }
+    
+    .right_btn {
+        right: -10%;
+    }
+    
+    .left_btn {
+        left: -10%;
+    }
+    
+    .carousel_nav {
+        gap: 4em;
+    }
+    
+    .carousel_indicator {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 
@@ -920,17 +1050,9 @@ h3.recipe_sub-header {
     list-style: none;
 }
 
-.recipe_ingredients_items,
-.ingredient_header {
+.recipe_ingredients_items {
     font-size: .8rem;
     line-height: 1.25rem;
-}
-
-span.ingredient_header {
-    font-weight: 600;
-    display: block;
-    color: brown;
-    margin: .5em 0;
 }
 
 li::marker {
@@ -949,6 +1071,74 @@ h2.recipe_title {
     font-size: clamp(1.75rem, 2.5vw, 4rem);
 }
 
+@media (min-width: 600px) {
+
+    .recipe_description {
+        margin: 0 2vw;
+    }
+    
+    .recipe_container {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        gap: 1em;
+        margin: 1em 2vw 4em 2vw;
+    }
+    
+    .recipe_intro,
+    ol {
+        font-size: clamp(.8rem, 1.15vw, 1.15rem);
+    }
+    
+    h3.recipe_sub-header {
+        font-size: clamp(1.15rem, 1.3vw, 1.3rem);
+    }
+    
+    .cook_time,
+    .serving_size {
+        margin-left: 1em;
+        font-weight: 200;
+        font-size: clamp(.8rem, 1.1vw, 1.1rem);
+    }
+    
+    .recipe_ingredients {
+        width: 25%;
+        min-width: 270px;
+    }
+    
+    .serving_size {
+        font-weight: 300;
+        font-style: italic;
+        margin-left: 2em;
+    }
+    
+    .recipe_ingredients_items {
+        font-size: clamp(.8rem, 1vw, 1rem);
+        line-height: 1.5rem;
+    }
+
+    .recipe_directions {
+        margin-bottom: 0;
+        flex-grow: 1;
+    }
+    
+    li::marker {
+        color: brown;
+        font-weight: 600;
+    }
+    
+    ol {
+        list-style-position: inside;
+        line-height: 1.5em;
+    }
+    
+    
+    h2.recipe_title {
+        margin: .5em 2vw;
+        font-size: clamp(1.75rem, 3vw, 3rem);
+    }
+    
+}
 
 
 
