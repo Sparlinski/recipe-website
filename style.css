@@ -613,6 +613,7 @@ h2.plan_week {
 .plan_imgs {
     object-fit: cover;
     width: 115%;
+    height: 100%;
 }
 
 .quote {
@@ -1164,6 +1165,12 @@ h2.recipe_title {
     margin-bottom: 2em;
 }
 
+.shoplist_main_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 
 .shoplist_section {
     display: flex;
@@ -1178,7 +1185,8 @@ h2.recipe_title {
     align-items: center;
 }
 
-.shoplist_section.end {
+.shoplist_section.end_a,
+.shoplist_section.end_b {
     background-color: aliceblue;
     padding: 0;
     gap: 1em;
@@ -1241,9 +1249,83 @@ h2.shoplist_h {
 }
 
 h3.shoplist_cat_h {
-    font-size: .70rem;
+    font-size: .9rem;
     font-weight: 400;
 }
+
+@media (min-width: 600px) {
+
+    .shoplist_main_section {
+        flex-direction: row;
+    }
+
+    .shoplist_section {
+        flex-grow: 1;
+        width: 100%;
+    }
+    
+    .shoplist_section.end_a,
+    .shoplist_section.end_b {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .shoplist_small_section {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    h3.shoplist_cat_h {
+        font-size: clamp(.9rem, 1vw, 1rem)
+    }
+
+    .shop_list_items li,
+    .shop_list_items {
+        font-size: clamp(.75rem, 1vw, 1rem);
+    }
+
+}
+
+@media (min-width: 990px) {
+
+    .shoplist_container {
+        flex-direction: row;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+
+    .shoplist_main_section {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .shoplist_section {
+        flex-grow: 1;
+        width: 100%;
+    }
+    
+    .shoplist_section.end_a,
+    .shoplist_section.end_b {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .shoplist_small_section {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    h3.shoplist_cat_h {
+        font-size: clamp(.9rem, 1.25vw, 1.25rem)
+    }
+
+    .shop_list_items li,
+    .shop_list_items {
+        font-size: clamp(.75rem, 1vw, 1rem);
+    }
+}
+
 
 
 
