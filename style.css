@@ -11,8 +11,11 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
     min-width: 300px;
+    height: 100vh;
 }
 
 a {
@@ -106,6 +109,9 @@ h1 {
 
 
 
+main {
+    flex-grow: 1;
+}
 
 #main_nav {
     display: flex;
@@ -1290,8 +1296,6 @@ h3.shoplist_cat_h {
 
     .shoplist_container {
         flex-direction: row;
-        margin-top: 4em;
-        margin-bottom: 4em;
     }
 
     .shoplist_main_section {
