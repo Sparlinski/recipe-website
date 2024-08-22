@@ -615,11 +615,6 @@ h2.plan_week {
     width: 115%;
 }
 
-.plan_imgs.last_plan_image {
-    width: 110%;
-    height: auto;
-}
-
 .quote {
 display: block;
 font-size: .9rem;
@@ -649,30 +644,36 @@ h2.meal_plans_h,
 }
 
 
-@media (min-width: 990px) {
+@media (min-width: 770px) {
     .plan_grids,
     .plan_grids_alt {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
-  }
+    }
   
-  .plan_containers.title_card,
-  .plan_containers {
-    height: 30vh;
+    .plan_containers.title_card,
+    .plan_containers {
+        height: 30vh;
+    }
+
+    .plan_imgs {
+        object-fit: cover;
+        width: 115%;
+        height: 100%;
     }
 
     .quote {
         display: block;
         font-size: clamp(.9rem, 1.25vw, 1.25rem);
-        }
+    }
 
-        h2.plan_week {
-            font-size: clamp(1.25rem, 3rem, 3vw);
-        }
+    h2.plan_week {
+        font-size: clamp(1.25rem, 3rem, 3vw);
+    }
 
-        .plan_icons {
-            max-height: 150px;
-        }
+    .plan_icons {
+        max-height: 150px;
+    }
 }
 
 
@@ -800,6 +801,9 @@ h3.all_recipe_cat {
         margin-bottom: 2em;
     }
 }
+
+
+
 
 
 
