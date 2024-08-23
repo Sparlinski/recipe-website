@@ -1126,11 +1126,6 @@ h2.recipe_title {
         min-width: 270px;
     }
     
-    .serving_size {
-        font-weight: 300;
-        font-style: italic;
-        margin-left: 2em;
-    }
     
     .recipe_ingredients_items {
         font-size: clamp(.8rem, 1vw, 1rem);
