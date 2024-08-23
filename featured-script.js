@@ -3,41 +3,57 @@ const featuredRecipes = [
         url: 'images/bacon-wrapped-meatballs.jpg',
         link: 'homepage.html',
         adjective: 'Baconlicious',
-        name: 'Bacon Wrapped Meatballs',
-        description: 'Everything is better wrapped in bacon! This delicious take on meatballs combines the elements of a traditional meatloaf recipe and adding a twist by wrapping each meatball in delicious bacon. Pairs well with the tradional mashed potatoes that meatloaf is known for.',
+        name: 'BACON WRAPPED MEATBALLS',
+        description: "Everything is better wrapped in bacon! This delicious take on meatballs combines the elements of a traditional meatloaf recipe and adds a twist by wrapping each meatball in delicious bacon. It pairs well with the traditional mashed potatoes that meatloaf is known for.",
         alt: 'Bacon Wrapped Meatballs'
     },
     {
         url: 'images/lemon butter chicken.jpg',
         link: 'homepage.html',
         adjective:  'Lemony Fresh',
-        name: 'Lemon Butter Chicken',
-        description: 'A traditional take on this classic italian dish, bursting with flavor and citrus, paired with fresh greens and mashed potatoes. A simple yet full flavoured dish',
+        name: 'LEMON BUTTER CHICKEN',
+        description: "A traditional take on this classic Italian dish, bursting with flavor and citrus, paired with fresh greens and mashed potatoes. A simple yet full-flavored dish.",
         alt: 'Lemon Butter Chicken'
     },
     {
-        url: 'images/mexican style beef with beans.jpg',
+        url: 'images/mexican style beef with beans-v2.jpg',
         link: 'homepage.html',
-        adjective: 'Hearty',
-        name: 'Mexican style beef stew',
-        description: 'Stews have a warm place in everyones hearts, they are a perfect complete dish that can be very versatile to ones own tastes and preferences. This take on a stew brings the traditional approach with a mexican twist. A simple and elegant mix of flavor and spices.',
+        adjective: 'Fiery',
+        name: 'MEXICAN STYLE BEEF WITH BEANS',
+        description: "Stews have a warm place in everyone's hearts, they are a perfect complete dish that can be very versatile to one's own tastes and preferences. This take on a stew brings the traditional approach with a Mexican twist. A simple and confident mix of flavor and spices.",
         alt: 'Mexican Style Beef Stew'
     },
     {
         url: 'images/tika-masala.jpg',
         link: 'homepage.html',
         adjective: 'Savory',
-        name: 'Tika-Masala',
-        description: 'This dish is packed with flavor. The time it is allowed in the slow cooker are what brings this dish together, the flavors and spices are given the time to mix and mingle to really deliver an enjoyable experience, good things come to those who wait afterall.',
+        name: 'TIKA-MASALA',
+        description: 'This dish is packed with flavor. The time it is allowed in the slow cooker is what brings this dish together, the flavors and spices are given the time to mix and mingle to really deliver an enjoyable experience, good things come to those who wait after all.',
         alt: 'Tika-Masala'
     },
     {
         url: 'images/turkey olive smoked paprika meatballs.jpg',
         link: 'homepage.html',
         adjective: 'Smokey',
-        name: 'Turkey Olive Smoked Paprika Meatballs',
-        description: 'This creative combination of flavors really makes for a unique dish. The smokiness of the paprika combines with the saltiness of the olives to compliment the acididity of the fire roasted tomato sauce. Paired with pasta and you have a fine meal that is sure to win anyone over.',
+        name: 'TURKEY OLIVE SMOKED PAPRIKA MEATBALLS',
+        description: 'This creative combination of flavors really makes for a unique dish. The smokiness of the paprika combines with the saltiness of the olives to complement the acidity of the fire-roasted tomato sauce. Paired with pasta, you have a fine meal that is sure to win anyone over.',
         alt: 'Turkey Olive Smoked Paprika Meatballs'
+    },
+    {
+        url: 'images/chicken-wings-v2.jpg',
+        link: 'homepage.html',
+        adjective: 'Baked',
+        name: 'CRISPY BAKED CHICKEN WINGS',
+        description: 'These wings are crispy, juicy, and full of flavor. Perfectly paired with potato wedges and roasted brussel sprouts in balsamic vinegar and a side of your favorite dipping sauce.',
+        alt: 'Crispy Baked Chicken Wings'
+    },
+    {
+        url: 'images/shredded-chicken-v2.jpg',
+        link: 'homepage.html',
+        adjective: 'Creamy',
+        name: 'CREAMY SHREDDED CHICKEN WITH BACON AND SPINACH',
+        description: 'The combination of cream and bacon adds a richness that compliments the shredded chicken perfectly in this dish, rounded off by delicious fresh spinach to bring a perfect balance to this dish.',
+        alt: 'Creamy Shredded Chicken With Bacon and Spinach'
     }
 
 ];

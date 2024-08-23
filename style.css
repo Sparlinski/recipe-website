@@ -319,6 +319,7 @@ h3.rotd_recipe_h {
     align-items: flex-start;
     width: 50%;
     padding: 1em;
+    padding-right: .25em;
     gap: .5em;
     text-align: left;
     background-color: rgb(208, 217, 225);
@@ -338,7 +339,7 @@ h3.rotd_recipe_h {
 
 .featured_recipe_h {
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -365,7 +366,7 @@ h3.rotd_recipe_h {
     }
     
     .featured_recipe_h {
-        font-size: clamp(1.3rem, 2.25vw, 2.25rem);
+        font-size: clamp(1rem, 2.25vw, 2.25rem);
     }
 }
 
@@ -715,7 +716,7 @@ h2.meal_plans_h,
     height: 22.5vh;
 }
 
-.chicken_recipes_image {
+.all_recipes_image {
     position: absolute;
     width: 100%;
 }
@@ -729,6 +730,7 @@ h2.meal_plans_h,
     top: 50%;
     background-color: aliceblue;
     min-width: 30%;
+    max-width: 60%;
     padding: 1em 1em 1em 0;
     border-radius: 0 10px 10px 0;
     font-size: .75rem;
@@ -1057,6 +1059,7 @@ h3.recipe_sub-header {
     margin-left: 5%;
 }
 
+
 .recipe_ingredients_items {
     list-style: none;
 }
@@ -1066,9 +1069,15 @@ h3.recipe_sub-header {
     line-height: 1.25rem;
 }
 
-li::marker {
+li::marker,
+.ingredient_header {
     color: brown;
     font-weight: 600;
+}
+
+.ingredient_header {
+    display: block;
+    margin: .25em 0;
 }
 
 ol {
@@ -1079,7 +1088,7 @@ ol {
 
 h2.recipe_title {
     margin: .5em 5%;
-    font-size: clamp(1.75rem, 2.5vw, 4rem);
+    font-size: 1.75rem
 }
 
 @media (min-width: 600px) {
@@ -1093,7 +1102,7 @@ h2.recipe_title {
         flex-direction: column;
         flex-direction: row;
         gap: 1em;
-        margin: 1em 2vw 4em 2vw;
+        margin: 1em 2vw 2em 2vw;
     }
     
     .recipe_intro,
@@ -1102,18 +1111,18 @@ h2.recipe_title {
     }
     
     h3.recipe_sub-header {
-        font-size: clamp(1.15rem, 1.3vw, 1.3rem);
+        font-size: clamp(1rem, 1.3vw, 1.3rem);
     }
     
     .cook_time,
     .serving_size {
         margin-left: 1em;
         font-weight: 200;
-        font-size: clamp(.8rem, 1.1vw, 1.1rem);
+        font-size: clamp(.7rem, 1.1vw, 1.1rem);
     }
     
     .recipe_ingredients {
-        width: 25%;
+        width: 40%;
         min-width: 270px;
     }
     
