@@ -1126,7 +1126,6 @@ h2.recipe_title {
         min-width: 270px;
     }
     
-    
     .recipe_ingredients_items {
         font-size: clamp(.8rem, 1vw, 1rem);
         line-height: 1.5rem;
@@ -1136,17 +1135,6 @@ h2.recipe_title {
         margin-bottom: 0;
         flex-grow: 1;
     }
-    
-    li::marker {
-        color: brown;
-        font-weight: 600;
-    }
-    
-    ol {
-        list-style-position: inside;
-        line-height: 1.5em;
-    }
-    
     
     h2.recipe_title {
         margin: .5em 2vw;
@@ -1374,7 +1362,8 @@ h2.about_h {
     .placeholder {
         object-fit: cover;
         width: 80%;
-        padding: 0 1em;
+        max-width: 750px;
+        padding: 0 2em;
         background-color: rgb(221, 230, 238);
     }
     
@@ -1382,4 +1371,11 @@ h2.about_h {
         flex: 1;
         background-color: rgb(208, 217, 225);;
     }
+
+    @media (min-width: 770px) {
+        .about_section {
+            height: 55vh;
+        }
+    }
+
     

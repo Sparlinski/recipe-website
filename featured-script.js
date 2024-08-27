@@ -28,7 +28,7 @@ const featuredRecipes = [
         link: 'homepage.html',
         adjective: 'Savory',
         name: 'TIKA-MASALA',
-        description: 'This dish is packed with flavor. The time it is allowed in the slow cooker is what brings this dish together, the flavors and spices are given the time to mix and mingle to really deliver an enjoyable experience, good things come to those who wait after all.',
+        description: "This dish is packed with flavor. The time it is allowed in the slow cooker is what brings this dish together, the flavors and spices are given the time to mix and mingle to really deliver an enjoyable experience, good things come to those who wait after all.",
         alt: 'Tika-Masala'
     },
     {
@@ -36,15 +36,15 @@ const featuredRecipes = [
         link: 'homepage.html',
         adjective: 'Smokey',
         name: 'TURKEY OLIVE SMOKED PAPRIKA MEATBALLS',
-        description: 'This creative combination of flavors really makes for a unique dish. The smokiness of the paprika combines with the saltiness of the olives to complement the acidity of the fire-roasted tomato sauce. Paired with pasta, you have a fine meal that is sure to win anyone over.',
+        description: "This creative combination of flavors really makes for a unique dish. The smokiness of the paprika combines with the saltiness of the olives to complement the acidity of the fire-roasted tomato sauce. Paired with pasta, you have a fine meal that is sure to win anyone over.",
         alt: 'Turkey Olive Smoked Paprika Meatballs'
     },
     {
         url: 'images/chicken-wings-v2.jpg',
         link: 'homepage.html',
         adjective: 'Baked',
-        name: 'CRISPY BAKED CHICKEN WINGS',
-        description: 'These wings are crispy, juicy, and full of flavor. Perfectly paired with potato wedges and roasted brussel sprouts in balsamic vinegar and a side of your favorite dipping sauce.',
+        name: 'CRISPY BAKED WINGS',
+        description: "These wings are crispy, juicy, and full of flavor. Perfectly paired with potato wedges and roasted brussel sprouts in balsamic vinegar with a side of your favorite dipping sauce.",
         alt: 'Crispy Baked Chicken Wings'
     },
     {
@@ -52,8 +52,16 @@ const featuredRecipes = [
         link: 'homepage.html',
         adjective: 'Creamy',
         name: 'CREAMY SHREDDED CHICKEN WITH BACON AND SPINACH',
-        description: 'The combination of cream and bacon adds a richness that compliments the shredded chicken perfectly in this dish, rounded off by delicious fresh spinach to bring a perfect balance to this dish.',
+        description: "The combination of cream and bacon adds a richness that compliments the shredded chicken perfectly in this dish, rounded off by delicious fresh spinach to bring a perfect balance to this dish.",
         alt: 'Creamy Shredded Chicken With Bacon and Spinach'
+    },
+    {
+        url: 'images/pot roast.jpg',
+        link: 'homepage.html',
+        adjective: 'Hearty',
+        name: 'POT ROAST',
+        description: "This classic American dish is combined with influence from a traditional Irish stew. This recipe is intended for a slow cooker dump-and-go approach, but it can also be done stew style in one hour if you don't have a chance during your day to start the dish—a fantastic, full-flavored filling meal with minimal fuss or effort.",
+        alt: 'Pot Roast'
     }
 
 ];
