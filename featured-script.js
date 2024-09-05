@@ -78,6 +78,14 @@ const featuredRecipes = [
         name: 'JUMABALAYA',
         description: "This New Orleans-inspired dish is packed full of flavor. The key to this dish is being familiar with the chorizo you use. Chorizo can be salty so it is wise to be cautious in the amount of salt you add. How well your chorizo holds together will also contribute to this dish's profile. I like a chorizo that holds together and adds extra substance providing a notable contrast of flavor in a bite to the chicken and vegetables in the dish.",
         alt: 'Jumbalaya'
+    },
+    {
+        url: 'images/marsala-v2.jpg',
+        link: 'marsala.html',
+        adjective: 'Rich',
+        name: 'CHICKEN MARSALA',
+        description: "Marsala wine defines both the name of this dish and its flavor profile. However, it is also higher in sugar than other wines and thus this variation of the recipe takes the best elements of the traditional dish and augments it to give a lower sugar profile. By swapping out the marsala wine for red wine vinegar you can reduce the sugar content without sacrificing any of the flavors.",
+        alt: 'Chicken Marsala'
     }
 
 ];
