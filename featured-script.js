@@ -86,7 +86,15 @@ const featuredRecipes = [
         name: 'CHICKEN MARSALA',
         description: "Marsala wine defines both the name of this dish and its flavor profile. However, it is also higher in sugar than other wines and thus this variation of the recipe takes the best elements of the traditional dish and augments it to give a lower sugar profile. By swapping out the marsala wine for red wine vinegar you can reduce the sugar content without sacrificing any of the flavors.",
         alt: 'Chicken Marsala'
-    }
+    },
+    {
+        url: 'images/white chili chicken.jpg',
+        link: 'white-chili.html',
+        adjective: 'Spicy',
+        name: 'WHITE CHILI CHICKEN',
+        description: "This white chili chicken recipe delivers flavor and the right balance of heat. Packed with chunks of juicy, tender chicken thighs, pinto beans, and peppers in a creamy coconut chili sauce it is sure to delight.",
+        alt: 'White Chili Chicken'
+    },
 
 ];
 
