@@ -92,9 +92,17 @@ const featuredRecipes = [
         link: 'white-chili.html',
         adjective: 'Spicy',
         name: 'WHITE CHILI CHICKEN',
-        description: "This white chili chicken recipe delivers flavor and the right balance of heat. Packed with chunks of juicy, tender chicken thighs, pinto beans, and peppers in a creamy coconut chili sauce it is sure to delight.",
+        description: "This white chili chicken recipe delivers flavor and the right balance of heat. Packed with chunks of juicy, tender chicken thighs, pinto beans, and peppers in a creamy coconut chili sauce, it is sure to delight.",
         alt: 'White Chili Chicken'
     },
+    {
+        url: 'images/shepherds-v2.jpg',
+        link: 'shepherds.html',
+        adjective: 'Homely',
+        name: 'SWEET POTATO SHEPHERDS PIE',
+        description: "Shepherd's pie is a simple and heartwarming meal. This version has reduced the richer ingredients you find throughout the various approaches to the dish. It is a stripped-down clean version that still brings that heartwarming taste with a flavorsome mince and vegetable filling and a creamy, sweet mash topping with a delightful roasted crisp finish.",
+        alt: 'Sweet Potato Shepherds Pie'
+    }
 
 ];
 

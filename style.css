@@ -174,12 +174,12 @@ h2 {
         justify-content: space-between;
         width: 90%;
         margin-bottom: 6em;
+        border-radius: 30px;
     }
     
     .main_nav_links {
         display: flex;
         flex-direction: column;
-        padding: .5em;
         height: 40vh;
         padding: .5em;
         gap: 2rem;
