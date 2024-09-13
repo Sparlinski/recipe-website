@@ -157,12 +157,12 @@ main {
     border-radius: 20px;
     padding: .5em;
     text-align: center;
-    margin: 4em auto 2em;
+    margin: auto;
     width: 90%;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -1328,15 +1328,63 @@ h3.shoplist_cat_h {
 
 
 
-
-/* ABOUT/NEW/NEWS/BLOG */
-
+/* ABOUT */
 
 
 
+.about_container {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.profile {
+    margin: auto;
+    width: 90%;
+}
+
+.profile_picture {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about_intro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+    border: 2px solid rgb(48, 48, 48);
+    border-style: none none solid none;
+    padding-bottom: 1em;
+}
+
+.about_intro_bold {
+    display: block;
+    font-weight: 800;
+    font-size: 1.30rem;
+    margin: 1em 0;
+    color: rgb(48, 48, 48);
+    border: 2px solid rgb(48, 48, 48);
+    border-style: solid none solid none;
+    padding: .5em 0;
+}
 
 
-h2.about_h {
+
+
+
+
+
+
+/*NEW/BLOG */
+
+
+
+
+
+
+h2.extras_h {
     display: block;
     text-align: center;
     font-size: 2rem;
@@ -1353,7 +1401,7 @@ h2.about_h {
     
     /* PLACEHOLDER IMAGE */
     
-    .about_section {
+    .extras_section {
         display: flex;
         height: 40vh;
         margin: 2em auto;
@@ -1374,7 +1422,7 @@ h2.about_h {
     }
 
     @media (min-width: 770px) {
-        .about_section {
+        .extras_section {
             height: 55vh;
         }
     }
