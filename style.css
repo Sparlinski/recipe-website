@@ -36,6 +36,9 @@ a {
 
 header {
     display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
     flex-direction: column;
     align-items: center;  
     background-color: rgb(48, 48, 48);
@@ -111,6 +114,7 @@ h1 {
 
 main {
     flex-grow: 1;
+    padding-top: 6em;
 }
 
 #main_nav {
@@ -159,6 +163,10 @@ main {
     text-align: center;
     margin: auto;
     width: 90%;
+}
+
+.rotd_container {
+    margin-bottom: 2em;
 }
 
 h2 {
@@ -232,6 +240,7 @@ h2 {
     padding: 2em;
     text-align: left;
     background-color: rgb(208, 217, 225);
+    margin-bottom: 2em;
 }
 
 h3.rotd_recipe_h {
