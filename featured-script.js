@@ -110,8 +110,15 @@ const featuredRecipes = [
         name: 'MONGOLIAN BEEF AND BROCCOLI',
         description: "Mongolian beef is delicious, but different recipes tend to use alot of sugar, this is where its sweet profile comes from after all. This recipe aims to capture that attribute through more natural means without losing what makes this dish so delicious in the first place. With fresh stir-fried broccoli adding a crunch that is sure to satisfy.",
         alt: 'Mongolian Beef Broccoli'
+    },
+    {
+        url: 'images/paprika-baked-chicken-v2.jpg',
+        link: 'paprika-chicken',
+        adjective: 'Simple',
+        name: 'PAPRIKA BAKED CHICKEN',
+        description: "A healthy and delicious dish that is quick and easy to make. Full of flavor with a touch of heat, sometimes the simplest things are the tastiest.",
+        alt: 'Paprika Baked Chicken'
     }
-
 ];
 
 function shuffle(array) {
