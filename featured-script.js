@@ -113,11 +113,19 @@ const featuredRecipes = [
     },
     {
         url: 'images/paprika-baked-chicken-v2.jpg',
-        link: 'paprika-chicken',
+        link: 'paprika-chicken.html',
         adjective: 'Simple',
         name: 'PAPRIKA BAKED CHICKEN',
         description: "A healthy and delicious dish that is quick and easy to make. Full of flavor with a touch of heat, sometimes the simplest things are the tastiest.",
         alt: 'Paprika Baked Chicken'
+    },
+    {
+        url: 'images/enchiladas.jpg',
+        link: 'enchiladas.html',
+        adjective: 'Saucy',
+        name: 'ENCHILADAS',
+        description: "These enchiladas bring all the flavor and leave the extras at the door. Making the spices and sauces from scratch ensures a cleaner final dish with none of the flavor sacrificed. Pair with roasted brussel sprouts and spanish rice to bring a rounded healthy take on this Mexican classic.",
+        alt: 'Enchiladas'
     }
 ];
 
