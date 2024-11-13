@@ -7,14 +7,14 @@ const featuredRecipes = [
         description: "Everything is better wrapped in bacon! This delicious take on meatballs combines the elements of a traditional meatloaf recipe and adds a twist by wrapping each meatball in delicious bacon. It pairs well with the traditional mashed potatoes that meatloaf is known for.",
         alt: 'Bacon Wrapped Meatballs'
     }, */
-    {
+/*     {
         url: 'images/lemon butter chicken.jpg',
         link: 'lemon-chicken.html',
         adjective:  'Lemony Fresh',
         name: 'LEMON BUTTER CHICKEN',
         description: "A traditional take on this classic Italian dish, bursting with flavor and citrus, paired with fresh greens and mashed potatoes. A simple yet full-flavored dish.",
         alt: 'Lemon Butter Chicken'
-    },
+    }, */
     /* {
         url: 'images/mexican style beef with beans-v2.jpg',
         link: 'mexican-beef-beans.html',
@@ -42,7 +42,7 @@ const featuredRecipes = [
     {
         url: 'images/chicken-wings-v2.jpg',
         link: 'wings.html',
-        adjective: 'Baked',
+        adjective: 'Juicy',
         name: 'CRISPY BAKED WINGS',
         description: "These wings are crispy, juicy, and full of flavor. Perfectly paired with potato wedges and roasted brussel sprouts in balsamic vinegar with a side of your favorite dipping sauce.",
         alt: 'Crispy Baked Chicken Wings'
@@ -63,14 +63,14 @@ const featuredRecipes = [
         description: "This classic American dish is influenced by a traditional Irish stew. This recipe is intended for a slow cooker dump-and-go approach, but it can also be done stew style in one hour if you don't have a chance during your day to start the dish—a fantastic, full-flavored filling meal with minimal fuss or effort.",
         alt: 'Pot Roast'
     },
-    {
+/*     {
         url: 'images/thai-red-curry-v2.jpg',
         link: 'thai-curry.html',
         adjective: 'Fragrant',
         name: 'THAI RED CURRY',
         description: "Thai curries are some of my favorites, bringing with them extra dimensions that differ from their Indian counterparts, and this dish is no different. Full of flavor and heat that is sure to please the senses, made from simple and healthy ingredients.",
         alt: 'Thai Red Curry'
-    },
+    }, */
     {
         url: 'images/jumbalaya.jpg',
         link: 'jumbalaya.html',
@@ -126,6 +126,86 @@ const featuredRecipes = [
         name: 'ENCHILADAS',
         description: "These enchiladas bring all the flavor and leave the extras at the door. Making the spices and sauces from scratch ensures a cleaner final dish with none of the flavor sacrificed. Pair with roasted brussel sprouts and spanish rice to bring a rounded healthy take on this Mexican classic.",
         alt: 'Enchiladas'
+    },
+    {
+        url: 'images/primavera.jpg',
+        link: 'primavera.html',
+        adjective: 'Fresh',
+        name: 'PRIMAVERA',
+        description: "A clean and elegant take on a classic Italian recipe, made with simple and wholesome ingredients. A sprinkle of your favorite cheese over the top adds the finishing touch to this simple and healthy dish.",
+        alt: 'Primavera'
+    },
+    {
+        url: 'images/chicken curry.jpg',
+        link: 'chicken-curry.html',
+        adjective: 'Aromatic',
+        name: 'CHICKEN CURRY',
+        description: "This recipe has evolved through trial and error to deliver a delicious curry, removing the added sugar that some can bring without sacrificing any flavor. As with all curries, the type of powder you use is king, so don't be afraid to experiment to augment the flavor.",
+        alt: 'Chicken Curry'
+    },
+    {
+        url: 'images/chicken cacciatore.jpg',
+        link: 'cacciatore.html',
+        adjective: 'Rustic',
+        name: 'CHICKEN CACCIATORE',
+        description: "This take on a classic Italian dish brings so much flavor and taste it would surprise you to know how little it took to get there and how simple it is in execution. Bringing all the best qualities of the original with a clean and healthy profile.",
+        alt: 'Cacciatore'
+    },
+    {
+        url: 'images/hash-v2.jpg',
+        link: 'hash.html',
+        adjective: 'Flavor',
+        name: 'CHICKEN APPLE BACON HASH',
+        description: "At first glance, this dish has such minimal seasonings, you wouldnt be remiss to think that it lacks flavor. The minimal seasoning is more than enough to pair with the mixture of ingredients that coalesce into a grand experience of flavor, from the sweetness of the apples, the roasted nutty peacans, to the savory bacon, a fantastically tasty easy recipe.",
+        alt: 'Chicken Apple Bacon Hash'
+    },
+    {
+        url: 'images/bolognese.jpg',
+        link: 'bolognese.html',
+        adjective: 'Classic',
+        name: 'BOLOGNESE',
+        description: "A simple and classic dish. All of the flavor with simple and clean ingridients. Enjoy with a choice of pasta and garlic bread or a side salad.",
+        alt: 'Bolognese'
+    },
+    {
+        url: 'images/chili.jpg',
+        link: 'chili.html',
+        adjective: 'Hearty',
+        name: 'CHILI CON CARNE',
+        description: "It's a classic chili recipe. Chilis come in all different styles, flavors, and heat levels, and this one is no different. No frills, just a classic, clean, sugar-free delicious chili that packs the right amount of heat.",
+        alt: 'Chili Con Carne'
+    },
+    {
+        url: 'images/beef curry-v2.jpg',
+        link: 'beef-curry.html',
+        adjective: 'Fragrant',
+        name: 'BEEF CURRY',
+        description: "Much like its chicken counterpart, this recipe evolved through trial and error to deliver a delicious curry, removing the added sugar that some can bring without sacrificing any flavor. The difference is slight, but the taste profile of the beef, and added mushrooms make a differentiation to its flavor.",
+        alt: 'Beef Curry'
+    },
+    {
+        url: 'images/turkey burgers.jpg',
+        link: 'turkey-burgers.html',
+        adjective: 'Flavorful',
+        name: 'TURKEY BURGERS WITH CARAMELIZED FENNEL CHIPOTLE MAYO',
+        description: "This recipe evolved by taking each of its elements and adjusting them to work in synergy with each other. The turkey burger flavor is enhanced by the creamy chipotle mayo and complimented perfectly by the sweetness of the potato mash.",
+        alt: 'Turkey Burgers'
+    },
+    {
+        url: 'images/turkey curry meatballs.jpg',
+        link: 'turkey-curry-meatballs.html',
+        adjective: 'Flavorsome',
+        name: 'TURKEY CURRY MEATBALLS',
+        description: "This recipe is heavily inspired by Thai cuisine with a compliment of roasted sweet potatoes to pair with the delicious lemongrass gravy. Just the right amount of heat brings this dish together, with the sweetness of the potato pairing with the curry-infused turkey meatballs.",
+        alt: 'Turkey Curry Meatballs'
+    },
+    {
+        url: 'images/feta turkey meatballs.jpg',
+        link: 'feta-meatballs.html',
+        adjective: 'Balanced',
+        name: 'FETA TURKEY MEATBALLS',
+        description: "The feta used in these meatballs is a perfect compliment to bring out the flavors and seasonings of these delicious turkey meatballs. It pairs well with a delicious red sauce and pasta and a side salad to round the meal out perfectly.",
+        alt: 'Feta Turkey Meatballs'
     }
 ];
 

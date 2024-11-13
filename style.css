@@ -121,11 +121,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    width: 80%;
     padding: 1em;
     gap: 1em;
-    margin: 2em auto;
-    border: 2px solid rgb(141, 147, 152);
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
     border-radius: 30px;
 }
 
@@ -134,7 +135,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 19vh;
+    height: 20vh;
     width: 100%;
     gap: 1em;
     padding: .5em;
@@ -180,7 +181,7 @@ h2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
+        width: 100%;
         margin-bottom: 6em;
         border-radius: 30px;
     }
@@ -720,6 +721,7 @@ h2.meal_plans_h,
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     object-fit: contain;
     border-radius: 15px;
@@ -815,6 +817,11 @@ h3.all_recipe_cat {
     .all_recipes_container {
         width: 100%;
         height: 30vh;
+    }
+
+    .all_recipes_image {
+        position: absolute;
+        width: 115%;
     }
 
     .all_recipes_grid.last_grid {
@@ -1340,16 +1347,21 @@ h3.shoplist_cat_h {
 
 /* ABOUT */
 
+h2.about_h {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: .5em;
+    margin: 1em auto;
+    background-color: rgb(221, 230, 238);
+    border: 2px solid rgb(208, 217, 225);
+    border-radius: 0;
+    border-style: solid none;
+    }
 
-
-.about_container {
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
 .profile {
-    margin: auto;
+    margin: 2em auto;
     width: 90%;
 }
 
@@ -1380,6 +1392,27 @@ h3.shoplist_cat_h {
     padding: .5em 0;
 }
 
+@media only screen and (min-width: 800px) {
+    .h2_container.about_container {
+        margin: none;
+    }
+
+    .about_wrapper {
+        display: flex;
+        padding: 0 2em;
+        margin-top: 2em;
+    }
+
+    .profile {
+        width: 60%;
+        margin: 0 2em 0 0;
+    }
+
+    .about_intro_bold {
+        margin: 0 0 1em 0;
+    }
+}
+
 
 
 
@@ -1388,10 +1421,6 @@ h3.shoplist_cat_h {
 
 
 /*NEW/BLOG */
-
-
-
-
 
 
 h2.extras_h {
@@ -1406,10 +1435,7 @@ h2.extras_h {
     border-style: solid none;
     }
     
-    
-    
-    
-    /* PLACEHOLDER IMAGE */
+/* PLACEHOLDER IMAGE */
     
     .extras_section {
         display: flex;
