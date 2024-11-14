@@ -1,3 +1,5 @@
+/* FEATURED RECIPES FUNCTION */
+
 const featuredRecipes = [
     /* {
         url: 'images/bacon-wrapped-meatballs.jpg',
@@ -239,4 +241,152 @@ randomRecipes.forEach((recipe, index) => {
     });
 };
 
-window.onload = displayFeaturedRecipe;
+/* ROTD FUNCTION */
+
+const rotdRecipes = [
+    {
+        name: 'CACCIATORE',
+        description: "This take on a classic Italian dish brings so much flavor and taste it would surprise you to know how little it took to get there and how simple it is in execution. Bringing all the best qualities of the original with a clean and healthy profile.",
+        image: 'images/chicken cacciatore.jpg',
+        link: 'cacciatore.html',
+        alt: 'Cacciatore',
+    },
+    {
+        name: "CHICKEN CURRY",
+        description: "This recipe has evolved through trial and error to deliver a delicious curry, removing the added sugar that some can bring without sacrificing any flavor. As with all curries, the type of powder you use is king, so don't be afraid to experiment to augment the flavor.",
+        image: "images/chicken curry.jpg",
+        link: "chicken-curry.html",
+        alt: 'Chicken Curry'
+    },
+    {
+        name: "POT ROAST",
+        description: "This classic American dish is influenced by a traditional Irish stew. This recipe is intended for a slow cooker dump-and-go approach, but it can also be done stew style in one hour if you don't have a chance during your day to start the dish—a fantastic, full-flavored filling meal with minimal fuss or effort.",
+        image: "images/pot roast.jpg",
+        link: "pot-roast.html",
+        alt: 'Pot Roast'
+    },
+    {
+        name: "JUMABALAYA",
+        description: "This New Orleans-inspired dish is packed full of flavor. The key to this dish is being familiar with the chorizo you use. Chorizo can be salty so it is wise to be cautious in the amount of salt you add. How well your chorizo holds together will also contribute to this dish's profile. I like a chorizo that holds together and adds extra substance providing a notable contrast of flavor in a bite to the chicken and vegetables in the dish.",
+        image: "images/jumbalaya.jpg",
+        link: "jumbalaya.html",
+        alt: 'Jumbalaya'
+    },
+    {
+        name: "CHICKEN MARSALA",
+        description: "Marsala wine defines both the name of this dish and its flavor profile. However, it is also higher in sugar than other wines and thus this variation of the recipe takes the best elements of the traditional dish and augments it to give a lower sugar profile. By swapping out the marsala wine for red wine vinegar you can reduce the sugar content without sacrificing any of the flavors.",
+        image: "images/marsala-v2.jpg",
+        link: "marsala.html",
+        alt: 'Chicken Marsala'
+    },
+    {
+        name: "WHITE CHILI CHICKEN",
+        description: "This white chili chicken recipe delivers flavor and the right balance of heat. Packed with chunks of juicy, tender chicken thighs, pinto beans, and peppers in a creamy coconut chili sauce, it is sure to delight.",
+        image: "images/white chili chicken.jpg",
+        link: "white-chili.html",
+        alt: 'White Chili Chicken'
+    },
+    {
+        name: "SWEET POTATO SHEPHERDS PIE",
+        description: "Shepherd's pie is a simple and heartwarming meal. This version has reduced the richer ingredients you find throughout the various approaches to the dish. It is a stripped-down clean version that still brings that heartwarming taste with a flavorsome mince and vegetable filling and a creamy, sweet mash topping with a delightful roasted crisp finish.",
+        image: "images/shepherds-v2.jpg",
+        link: "shepherds.html",
+        alt: 'Sweet Potato Shepherds Pie'
+    },
+    {
+        name: "MONGOLIAN BEEF AND BROCCOLI",
+        description: "Mongolian beef is delicious, but different recipes tend to use alot of sugar, this is where its sweet profile comes from after all. This recipe aims to capture that attribute through more natural means without losing what makes this dish so delicious in the first place. With fresh stir-fried broccoli adding a crunch that is sure to satisfy.",
+        image: "images/mongolian-v2.jpg",
+        link: "mongolian.html",
+        alt: 'Mongolian Beef Broccoli'
+    },
+    {
+        name: "PAPRIKA BAKED CHICKEN",
+        description: "A healthy and delicious dish that is quick and easy to make. Full of flavor with a touch of heat, sometimes the simplest things are the tastiest.",
+        image: "images/paprika-baked-chicken-v2.jpg",
+        link: "paprika-chicken.html",
+        alt: 'Paprika Baked Chicken'
+    },
+    {
+        name: "ENCHILADAS",
+        description: "These enchiladas bring all the flavor and leave the extras at the door. Making the spices and sauces from scratch ensures a cleaner final dish with none of the flavor sacrificed. Pair with roasted brussel sprouts and spanish rice to bring a rounded healthy take on this Mexican classic.",
+        image: "images/enchiladas.jpg",
+        link: "enchiladas.html",
+        alt: 'Enchiladas'
+    },
+    {
+        name: "PRIMAVERA",
+        description: "A clean and elegant take on a classic Italian recipe, made with simple and wholesome ingredients. A sprinkle of your favorite cheese over the top adds the finishing touch to this simple and healthy dish.",
+        image: "images/primavera.jpg",
+        link: "primavera.html",
+        alt: 'Primavera'
+    },
+    {
+        name: "CHICKEN APPLE BACON HASH",
+        description: "At first glance, this dish has such minimal seasonings, you wouldnt be remiss to think that it lacks flavor. The minimal seasoning is more than enough to pair with the mixture of ingredients that coalesce into a grand experience of flavor, from the sweetness of the apples, the roasted nutty peacans, to the savory bacon, a fantastically tasty easy recipe.",
+        image: "images/hash-v2.jpg",
+        link: "hash.html",
+        alt: 'Chicken Apple Bacon Hash'
+    },
+    {
+        name: "BOLOGNESE",
+        description: "A simple and classic dish. All of the flavor with simple and clean ingridients. Enjoy with a choice of pasta and garlic bread or a side salad.",
+        image: "images/bolognese.jpg",
+        link: "bolognese.html",
+        alt: 'Bolognese'
+    },
+    {
+        name: "CHILI CON CARNE",
+        description: "It's a classic chili recipe. Chilis come in all different styles, flavors, and heat levels, and this one is no different. No frills, just a classic, clean, sugar-free delicious chili that packs the right amount of heat.",
+        image: "images/chili.jpg",
+        link: "chili.html",
+        alt: 'Chili Con Carne'
+    },
+    {
+        name: "BEEF CURRY",
+        description: "Much like its chicken counterpart, this recipe evolved through trial and error to deliver a delicious curry, removing the added sugar that some can bring without sacrificing any flavor. The difference is slight, but the taste profile of the beef, and added mushrooms make a differentiation to its flavor.",
+        image: "images/beef curry-v2.jpg",
+        link: "beef-curry.html",
+        alt: 'Beef Curry'
+    },
+    {
+        name: "TURKEY BURGERS WITH CARAMELIZED FENNEL CHIPOTLE MAYO",
+        description: "This recipe evolved by taking each of its elements and adjusting them to work in synergy with each other. The turkey burger flavor is enhanced by the creamy chipotle mayo and complimented perfectly by the sweetness of the potato mash.",
+        image: "images/turkey burgers.jpg",
+        link: "turkey-burgers.html",
+        alt: 'Turkey Burgers'
+    },
+    {
+        name: "TURKEY CURRY MEATBALLS",
+        description: "This recipe is heavily inspired by Thai cuisine with a compliment of roasted sweet potatoes to pair with the delicious lemongrass gravy. Just the right amount of heat brings this dish together, with the sweetness of the potato pairing with the curry-infused turkey meatballs.",
+        image: "images/turkey curry meatballs.jpg",
+        link: "turkey-curry-meatballs.html",
+        alt: 'Turkey Curry Meatballs'
+    },
+    {
+        name: "FETA TURKEY MEATBALLS",
+        description: "The feta used in these meatballs is a perfect compliment to bring out the flavors and seasonings of these delicious turkey meatballs. It pairs well with a delicious red sauce and pasta and a side salad to round the meal out perfectly.",
+        image: "images/feta turkey meatballs.jpg",
+        link: "feta-meatballs.html",
+        alt: 'Feta Turkey Meatballs'
+    }
+];
+
+function setFeaturedRecipe() {
+    
+    const today = new Date().toISOString().slice(0, 10).replace(/-/g, '');
+    const seed = parseInt(today, 10);
+    const recipeIndex = seed % rotdRecipes.length; 
+    const selectedRecipe = rotdRecipes[recipeIndex];
+
+    document.getElementById("rotd_link").href = selectedRecipe.link;
+    document.getElementById("rotd_image").src = selectedRecipe.image;
+    document.getElementById("rotd_image").alt = selectedRecipe.name;
+    document.getElementById("rotd_name").textContent = selectedRecipe.name;
+    document.getElementById("rotd_description").textContent = selectedRecipe.description;
+};
+
+window.onload = function() {
+    setFeaturedRecipe();
+    displayFeaturedRecipe();
+};
