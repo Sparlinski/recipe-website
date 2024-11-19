@@ -208,6 +208,14 @@ const featuredRecipes = [
         name: 'FETA TURKEY MEATBALLS',
         description: "The feta used in these meatballs is a perfect compliment to bring out the flavors and seasonings of these delicious turkey meatballs. It pairs well with a delicious red sauce and pasta and a side salad to round the meal out perfectly.",
         alt: 'Feta Turkey Meatballs'
+    },
+    {
+        url: 'images/thai-noodle-v2.jpg',
+        link: 'thai-noodle.html',
+        adjective: 'Fresh',
+        name: 'CHICKEN THAI NOODLES',
+        description: "This Thai noodle curry is full of flavor and heat that is sure to please the senses, made from simple and healthy ingredients, with juicy marinated chicken and fresh crispy stir-fried vegetables. Pair with your choice of egg noodle for a delicious dish.",
+        alt: 'Chicken Thai Noodles'
     }
 ];
 
@@ -369,6 +377,20 @@ const rotdRecipes = [
         image: "images/feta turkey meatballs.jpg",
         link: "feta-meatballs.html",
         alt: 'Feta Turkey Meatballs'
+    },
+    {
+        name: "CHICKEN THAI NOODLES",
+        description: "This Thai noodle curry is full of flavor and heat that is sure to please the senses, made from simple and healthy ingredients, with juicy marinated chicken and fresh crispy stir-fried vegetables. Pair with your choice of egg noodle for a delicious dish.",
+        image: "images/thai-noodle-v2.jpg",
+        link: "thai-noodle.html",
+        alt: 'Thai Chicken Noodles'
+    },
+    {
+        name: "CRISPY BAKED WINGS",
+        description: "These wings are crispy, juicy, and full of flavor. Perfectly paired with potato wedges and roasted brussel sprouts in balsamic vinegar with a side of your favorite dipping sauce.",
+        image: "images/chicken-wings-v2.jpg",
+        link: "wings.html",
+        alt: 'Crispy Baked Chicken Wings'
     }
 ];
 

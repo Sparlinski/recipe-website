@@ -1450,6 +1450,11 @@ h2.about_h {
     border-style: solid none;
     }
 
+h3.new_recipes_h {
+    font-weight: 400;
+    
+}
+
 
 .profile {
     margin: 2em auto;
