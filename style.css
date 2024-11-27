@@ -278,6 +278,7 @@ h3.rotd_recipe_h {
         z-index: 1;
         text-align: left;
         background-color: aliceblue;
+        margin-bottom: 0;
     }
     
     .rotd_image {
@@ -293,7 +294,7 @@ h3.rotd_recipe_h {
     
     .rotd_description_p {
         margin-top: 5%;
-        font-size: clamp(.75rem, 1vw, 1rem);
+        font-size: clamp(.75rem, 1.5vw, 1.5rem);
     }
 }
 
