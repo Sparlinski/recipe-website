@@ -89,7 +89,7 @@ h1 {
         list-style-type: none;
         display: inline;
         color: aliceblue;
-        font-size: clamp(.8rem, 1vw, 1rem);
+        font-size: clamp(.8rem, 1.5vw, 1.5rem);
     }
     
     h1 {
@@ -154,7 +154,7 @@ main {
 }
 
 .main_nav_icons {
-    height: 60%;
+    height: 80%;
 }
 
 .h2_container {
@@ -209,7 +209,7 @@ h2 {
     }
     
     h2 {
-        font-size: clamp(1.75rem, 3vw, 3rem);
+        font-size: clamp(1.75rem, 4vw, 4rem);
     }       
 }
 
@@ -239,7 +239,7 @@ h2 {
     padding: 2em;
     text-align: left;
     background-color: rgb(208, 217, 225);
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 h3.rotd_recipe_h {
@@ -262,7 +262,7 @@ h3.rotd_recipe_h {
         overflow: hidden;
         width: 100%;
         min-height: 350px;
-        margin-bottom: 6em;
+        margin-bottom: 12em;
         aspect-ratio: 1000 / 350;
     }
     
@@ -271,7 +271,7 @@ h3.rotd_recipe_h {
         align-self: flex-start;
         width: 30%;
         min-width: 250px;
-        bottom: 10%;
+        bottom: 5%;
         left: 2.5%;
         border-radius: 25px;
         border: 2px solid rgb(48, 48, 48);
@@ -326,7 +326,7 @@ h3.rotd_recipe_h {
     justify-content: center;
     align-items: flex-start;
     width: 50%;
-    padding: 1em;
+    padding: 2em;
     padding-right: .25em;
     gap: .5em;
     text-align: left;
@@ -353,29 +353,29 @@ h3.rotd_recipe_h {
 
 @media (min-width: 600px) {
     .featured_recipes_nav {
-        height: 60vh;
+        height: auto;
         margin-bottom: 4em;
+        max-height: 600px;
     }
     
     
     .featured_b_panel {
         padding: 2em;
-        gap: 1em;
+        gap: 2em;
     }
     
     .featured_description_p {
         display: flex;
-        font-size: clamp(.8rem, 1.25vw, 1.25rem);
-        max-width: 500px;
+        font-size: clamp(.8rem, 1.5vw, 1.5rem);
     }
     
     .featured_adj {
         padding: .5em;
-        font-size: clamp(1rem, 1.5vw, 1.5vw);
+        font-size: clamp(1rem, 1.25vw, 1.25vw);
     }
     
     .featured_recipe_h {
-        font-size: clamp(1rem, 2.25vw, 2.25rem);
+        font-size: clamp(1rem, 2.5vw, 2.5rem);
     }
 }
 
@@ -685,7 +685,7 @@ h2.meal_plans_h,
 
     .quote {
         display: block;
-        font-size: clamp(.9rem, 1.25vw, 1.25rem);
+        font-size: clamp(.9rem, 1.5vw, 1.5rem);
     }
 
     h2.plan_week {

@@ -77,7 +77,7 @@ const featuredRecipes = [
         url: 'images/jumbalaya.jpg',
         link: 'jumbalaya.html',
         adjective: 'Robust',
-        name: 'JUMABALAYA',
+        name: 'JUMBALAYA',
         description: "This New Orleans-inspired dish is packed full of flavor. The key to this dish is being familiar with the chorizo you use. Chorizo can be salty so it is wise to be cautious in the amount of salt you add. How well your chorizo holds together will also contribute to this dish's profile. I like a chorizo that holds together and adds extra substance providing a notable contrast of flavor in a bite to the chicken and vegetables in the dish.",
         alt: 'Jumbalaya'
     },
